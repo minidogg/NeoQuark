@@ -1,0 +1,31 @@
+{
+  "name": "neo-quark",
+  "version": "1.0.0",
+  "description": "A backend API that lets you only have to worry about making the front-end for your chat app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minidogg/NeoQuark.git"
+  },
+  "keywords": [
+    "chat"
+  ],
+  "author": "minidogg / UnluckyCrafter",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/minidogg/NeoQuark/issues"
+  },
+  "homepage": "https://github.com/minidogg/NeoQuark#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
