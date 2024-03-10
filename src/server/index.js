@@ -17,6 +17,11 @@ module.exports.server = async(wsPort)=>{
                     console.warn(err)
                     return;
                 }
+                // if(typeof(data.trackerId)=="object"){
+                //     ws.send(JSON.stringify({error:true,status:415,message:"Invalid trackerId type: '"+typeof(data.trackerId)+"'"}))
+                //     console.log(data.trackerId)
+                //     return;
+                // }
                 switch(data.type){
                     case("uptime"):
                     ws.send(JSON.stringify({data:process.uptime(),status:200,trackerId:data.trackerId}))
