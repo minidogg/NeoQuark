@@ -19,7 +19,7 @@ module.exports.server = async(wsPort)=>{
                 }
                 switch(data.type){
                     case("uptime"):
-                    ws.send({})
+                    ws.send(JSON.stringify({data:process.uptime(),status:200,trackerId:data.trackerId}))
                     break
                     default:
                         ws.send(JSON.stringify({error:true,status:501,message:"Invalid message type",trackerId:data.trackerId}))
