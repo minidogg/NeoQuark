@@ -3,6 +3,8 @@ async function startServer(wsPort,expressPort,dev=true){
     const server = require("./server/index.js")
     const init = require("./init.js")
 
+
+
     try{
         await init.init()
         await server.server(wsPort)
